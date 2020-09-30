@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Kontakty</title>
+</head>
+<body>
+    <div class="addForm col-6 fixed-top bg-secondary rounded mt-3 pb-4 mx-auto text-right" style="display: none;">
+        <div class="row d-flex justify-content-end coursor-pointer mr-0 p-2">
+            <button type="button" class="close text-white addFormClose" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <form action="" class="d-flex-column col">
+            <div class="form-group col">
+                <input type="text" class="form-control" name="imie" id="" placeholder="Imię">
+            </div>
+            <div class="form-group col">
+                <input type="text" class="form-control" name="nazwisko" id="" placeholder="Nazwisko">
+            </div>
+            <div class="form-group col">
+                <input type="number" class="form-control" name="kierunkowy" id="" placeholder="Nrumer kierunkowy">
+            </div>
+            <div class="form-group col">
+                <input type="number" class="form-control" name="stacjonarny" id="" placeholder="Stacjonarny">
+            </div>
+            <div class="form-group col">
+                <input type="number" class="form-control" name="komurkowy" id="" placeholder="Komurkowy">
+            </div>
+            <div class="form-group col">
+                <input type="text" class="form-control" name="adres" id="" placeholder="Miasto i adres">
+            </div>
+            <div class="form-group col">
+                <input type="text" class="form-control" name="zawod" id="" placeholder="Zawód">
+            </div>
+            <div class="form-group col">
+                <textarea class="form-control" name="" id="uwagi" rows="3" placeholder="Uwagi"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success col">Dodaj</button>
+        </form>
+    </div>
+    <div class="container">
+        <header>
+        <div class="row">
+            <div class="col p-5">
+                <button role="button" id="addForm" class="border-0 bg-success text-white rounded" >
+                    +
+                </button>
+        </div>
+        
+        </header>
+            
+        <main>
+            <table class="table table-striped table-inverse table-hover table-responsive">
+                <thead class="thead-inverse">
+                    <tr>
+                        <th>Imię</th>
+                        <th>Nazwisko</th>
+                        <th>Numer kierunkowy</th>
+                        <th>Numer stacjonarny</th>
+                        <th>Numrt komurkowy</th>
+                        <th>Miasto i adres</th>
+                        <th>Zawód</th>
+                        <th>Uwagi</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+            </table>
+        </main>
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
