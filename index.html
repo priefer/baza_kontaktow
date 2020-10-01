@@ -17,28 +17,28 @@
         </div>
         <form action="" class="d-flex-column col">
             <div class="form-group col">
-                <input type="text" class="form-control" name="imie" id="" placeholder="Imię">
+                <input type="text" class="form-control" name="imie" id="" placeholder="Imię" minlength="1" maxlength="50">
             </div>
             <div class="form-group col">
-                <input type="text" class="form-control" name="nazwisko" id="" placeholder="Nazwisko">
+                <input type="text" class="form-control" name="nazwisko" id="" placeholder="Nazwisko" minlength="1" maxlength="50">
             </div>
             <div class="form-group col">
-                <input type="number" class="form-control" name="kierunkowy" id="" placeholder="Nrumer kierunkowy">
+                <input type="number" class="form-control" name="kierunkowy" id="" placeholder="Nrumer kierunkowy" min="1" max="99999">
             </div>
             <div class="form-group col">
-                <input type="number" class="form-control" name="stacjonarny" id="" placeholder="Stacjonarny">
+                <input type="number" class="form-control" name="stacjonarny" id="" placeholder="Stacjonarny" min="1" max="999999999999999">
             </div>
             <div class="form-group col">
-                <input type="number" class="form-control" name="komurkowy" id="" placeholder="Komurkowy">
+                <input type="number" class="form-control" name="komurkowy" id="" placeholder="Komurkowy" min="1" max="999999999999999">
             </div>
             <div class="form-group col">
-                <input type="text" class="form-control" name="adres" id="" placeholder="Miasto i adres">
+                <input type="text" class="form-control" name="adres" id="" placeholder="Miasto i adres" minlength="1" maxlength="100">
             </div>
             <div class="form-group col">
-                <input type="text" class="form-control" name="zawod" id="" placeholder="Zawód">
+                <input type="text" class="form-control" name="zawod" id="" placeholder="Zawód" minlength="1" maxlength="50">
             </div>
             <div class="form-group col">
-                <textarea class="form-control" name="" id="uwagi" rows="3" placeholder="Uwagi"></textarea>
+                <input type="text" class="form-control" name="uwagi" id="" placeholder="Uwagi" maxlength="255">
             </div>
             <button type="submit" class="btn btn-success col">Dodaj</button>
         </form>

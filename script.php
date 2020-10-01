@@ -8,6 +8,9 @@ $db = "kontakty";
 if (isset($_GET['action'])) {
     $_GET['action']();
 }
+if (isset($_POST['action'])) {
+    $_POST['action'](json_decode($_POST['data']));
+}
 
 function display()
 {
@@ -33,6 +36,17 @@ function display()
     mysqli_close($link);
 
 }
+function addNewContact($data)
+{
+    global $server, $user, $pass, $db;
+    $link = mysqli_connect($server, $user, $pass, $db);
+    $result = mysqli_query($link, "INSERT INTO tbl_kontakty VALUES (NULL, '$data[0]', '$data[1]', '$data[2]', '$data[3]', '$data[4]', '$data[5]', '$data[6]', '$data[7]')");
+    if ($link->connect_errno) {
+        echo "Nie udało się dodać kontaktu";
+        exit();
+    }
+    mysqli_close($link);
 
+}
 
 ?>
